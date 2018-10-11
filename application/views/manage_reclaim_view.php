@@ -26,7 +26,7 @@ echo '
  if($debt['ispaid']==="0") { ?>
 <form method="GET" action="/manage/reclaim">
 <input type="hidden" name="id" value="<?php echo ''.$debt['id'].''; ?>">
-<input type="text" name="comment">
+<input type="text" placeholder="комментарий" name="comment">
 <button type="submit">Remove</button>
 </form>
 <!--
